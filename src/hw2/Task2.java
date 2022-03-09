@@ -2,7 +2,8 @@ package hw2;
 
 public class Task2 {
     public static void main(String[] args) {
-        int firstNumber = 20, secondNumber = 10, operator = 9;
+        double firstNumber = 20, secondNumber = 10;
+        int operator = 9;
         switch (operator) {
             case 3:
                 System.out.println( firstNumber + secondNumber);
