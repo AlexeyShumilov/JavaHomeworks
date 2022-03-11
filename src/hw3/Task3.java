@@ -9,18 +9,20 @@ public class Task3 {
         Scanner in = new Scanner(System.in);
         int userNum = in.nextInt();
         do {
+            if (userNum == random){
+                System.out.println("Вы угадали, это число " + random);
+                break;}
             if (userNum == 0){
                 System.out.println("Вы вышли из программы");
             break;
-            } if (userNum > random);{
+            } if (userNum > random){
                 System.out.println("Загаданное число меньше, попробуйте другое: ");
                 userNum = in.nextInt();
-            } if (userNum < random);{
+                continue;}
+             if (userNum < random){
                 System.out.println("Загаданное число больше, попробуйте другое: ");
                 userNum = in.nextInt();
-            } if (userNum == random){
-            System.out.println("Вы угадали, это число" + random);
-            break;}
+            }
         } while (true);
     }
 }
