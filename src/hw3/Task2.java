@@ -7,7 +7,10 @@ public class Task2 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите целое число");
         int userNum = in.nextInt();
-        int summ = userNum / 10 + userNum % 10;
-        System.out.println(summ);
+        int summ = 0;
+        while ( userNum != 0) {
+             summ = userNum / 10 + userNum % 10;
+            System.out.println(summ);
+        }
     }
 }
