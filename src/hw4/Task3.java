@@ -7,9 +7,9 @@ public class Task3 {
         int[] mas = new int[11];
         int count1 = 0, count2 = 0, count3 = 0;
         for (int i = 0; i < 11; i++){
-            mas[i]= ((int)(Math.random() * 3) - 1);
-            if (mas[i]== -1) count1++;
-            else if (mas[i]== 0) count2++;
+            mas[i] = ((int)(Math.random() * 3) - 1);
+            if (mas[i] == -1) count1++;
+            else if (mas[i] == 0) count2++;
             else count3++;
         }
         System.out.println("Массив: " + Arrays.toString(mas));
