@@ -9,7 +9,7 @@ public class Task2 {
             if (i==0) mas[i] = 2;
             else mas[i] = (2 + mas[i - 1]);
         }
-        System.out.println("Орининальный массив: " + Arrays.toString(mas));
+        System.out.println("Оригинальный массив: " + Arrays.toString(mas));
         for (int i = 0; i < mas.length; i++) mas[i]*=-1;
         Arrays.sort(mas);
         for (int i = 0; i < mas.length; i++) mas[i]*=-1;
