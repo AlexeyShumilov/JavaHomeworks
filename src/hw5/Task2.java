@@ -9,7 +9,7 @@ public class Task2 {
         String word = scan.nextLine();
         char[] letters = word.toCharArray();
         String firstLetter = String.valueOf(letters[0]);
-        StringBuilder newWord=new StringBuilder(firstLetter.toUpperCase());
+        StringBuilder newWord = new StringBuilder(firstLetter.toUpperCase());
         for (int i = 1; i < letters.length; i++){
             String anotherLetter= String.valueOf(letters[i]);
             newWord.append(anotherLetter.toLowerCase());
