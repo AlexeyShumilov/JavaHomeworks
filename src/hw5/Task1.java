@@ -8,6 +8,7 @@ public class Task1 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите длину массива: ");
         int n = scan.nextInt();
+        scan.nextLine();
         String word;
         String[] words = new String[n];
         for (int i = 0; i < n; i++){
