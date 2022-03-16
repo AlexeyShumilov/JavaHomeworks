@@ -13,7 +13,7 @@ public class Task1 {
         for (int i = 0; i < n; i++){
             System.out.println("Введите" + (i+1) + " слово: ");
             word = scan.nextLine();
-            if (word.equalsIgnoreCase("exir")) break;
+            if (word.equalsIgnoreCase("exit")) break;
             words[i] = word;
             for (int f = (i - 1); f >= 0; f--){
                 if (word.equalsIgnoreCase(words[f])){
