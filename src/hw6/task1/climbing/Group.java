@@ -29,7 +29,7 @@ public class Group {
             addClimber(climber);
             System.out.print(climber.getNameAndAdress() + "; ");
         }
-        System.out.print(" - поднимаются на гору " + mountain.getMountainName()+" в " + mountain.getMountainCountry() + " высотой "+mountain.getMountainHeight() + " м.\n" );
+        System.out.print(" - поднимаются на гору " + mountain.getMountainName() + " в " + mountain.getMountainCountry() + " высотой "+ mountain.getMountainHeight() + " м.\n" );
     }
 
     public Group(Mountain mountain) {
