@@ -21,7 +21,7 @@ public class Group {
                 return;
             }
         }
-        System.out.println("Мест нет, группа для восхождения на гору "+ mountain.getMountainName() + " полная");
+        System.out.println("Мест нет, группа для восхождения на гору "+ mountain.getMountainName() + " заполнена");
     }
     public void addClimber(Climber...climbers){
         System.out.print("Альпинисты: ");
@@ -29,7 +29,7 @@ public class Group {
             addClimber(climber);
             System.out.print(climber.getNameAndAdress() + "; ");
         }
-        System.out.print(" - восходят на гору " + mountain.getMountainName()+" в " + mountain.getMountainCountry() + " высотой "+mountain.getMountainHeight() + " м.\n" );
+        System.out.print(" - поднимаются на гору " + mountain.getMountainName()+" в " + mountain.getMountainCountry() + " высотой "+mountain.getMountainHeight() + " м.\n" );
     }
 
     public Group(Mountain mountain) {
