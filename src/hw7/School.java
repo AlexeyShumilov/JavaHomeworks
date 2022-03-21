@@ -27,12 +27,13 @@ public class School {
             for (Student s : students) {
                 if ((s != null && t != null) && (t.getLesson().equals(s.getLesson()))) {
                     t.toTeach(s);
-                    System.out.println("У ученика" );
+                    System.out.println("У ученика");
                 }
+            }
+            director.finish();
+            ;
         }
-        director.finish();;
     }
-
     public void addTeacher(Teacher teacher){
         for (int i = 0; i < teachers.length; i++){
             if (teachers[i] == null){

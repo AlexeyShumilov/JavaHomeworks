@@ -15,7 +15,7 @@ public class Application {
         Student student4 = new Student("Nikita", 13, "Biology");
 
         school.addTeacher(teacher1, teacher2);
-        school.addStudents(student1, student2);
+        school.addStudent(student1, student2);
 
 
         school.schoolDay();
