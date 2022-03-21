@@ -17,7 +17,6 @@ public class Application {
         school.addTeacher(teacher1, teacher2);
         school.addStudent(student1, student2);
 
-
         school.schoolDay();
     }
 }
