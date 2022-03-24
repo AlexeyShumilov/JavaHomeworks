@@ -9,19 +9,13 @@ import java.util.concurrent.Callable;
 public class Application {
     public static void main(String[] args){
 
-       Climber[] climbers1 = new Climber[3];
-
-       climbers1[0] = new Climber("John", "New York");
-       climbers1[1] = new Climber("Andrew", "Marselle");
-       climbers1[2] = new Climber("Vasya", "Moscow");
-
-       Climber[] climbers2 = new Climber[2];
-       climbers2[0] = new Climber("Maria", "Edinburgh");
-       climbers2[1] = new Climber("Alex", "Madrid");
-
-       Climber[] climbers3 = new Climber[2];
-       climbers3[0] = new Climber("Vladislav", "Saratov");
-       climbers3[1] = new Climber("Jane", "Chicago");
+       Climber climber1 = new Climber("John", "New York");
+       Climber climber2 = new Climber("Andrew", "Marselle");
+       Climber climber3 = new Climber("Vasya", "Moscow");
+       Climber climber4 = new Climber("Maria", "Edinburgh");
+       Climber climber5 = new Climber("Alex", "Madrid");
+       Climber climber6 = new Climber("Vladislav", "Saratov");
+       Climber climber7 = new Climber("Jane", "Chicago");
 
         Mountain mountain1 = new Mountain("Everest", "Nepal", 8849);
         Mountain mountain2 = new Mountain("Kilimanjaro", "Tanzania", 5895);
@@ -31,9 +25,9 @@ public class Application {
         Group group2 = new Group(mountain2);
         Group group3 = new Group(mountain3);
 
-        group1.addClimber(climbers1);
-        group2.addClimber(climbers2);
-        group3.addClimber(climbers3);
+        group1.addClimber(climber1, climber2, climber3, climber5);
+        group2.addClimber(climber4, climber5);
+        group3.addClimber(climber6, climber7);
 
     }
 }

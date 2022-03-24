@@ -11,10 +11,6 @@ public class Climber {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setAdress(String adress) {
         if (adress == null || adress.length() < 5) {
             throw new IllegalArgumentException("Значение adress от 5 символов");
@@ -22,15 +18,9 @@ public class Climber {
         this.adress = adress;
     }
 
-    public String getAdress() {
-        return adress;
-    }
-
     public Climber(String name, String adress){
         setName(name);
-        this.name = name;
         setAdress(adress);
-        this.adress = adress;
     }
 
     public void printNameAndAdress(){

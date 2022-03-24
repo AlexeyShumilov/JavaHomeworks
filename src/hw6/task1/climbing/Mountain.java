@@ -41,10 +41,8 @@ public class Mountain {
 
     public Mountain (String mountainName, String mountainCountry, int mountainHeight){
         setMountainName(mountainName);
-        this.mountainName = mountainName;
         setMountainCountry(mountainCountry);
-        this.mountainCountry = mountainCountry;
         setMountainHeight(mountainHeight);
-        this.mountainHeight = mountainHeight;
+
     }
 }
