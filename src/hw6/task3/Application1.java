@@ -23,6 +23,7 @@ public class Application1 {
         System.out.println(cat1);
         System.out.println(cat2);
         cat1.catFight(cat2);
-
+        System.out.println(cat1);
+        System.out.println(cat2);
     }
 }
