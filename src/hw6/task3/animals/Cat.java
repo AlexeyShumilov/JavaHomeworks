@@ -55,7 +55,7 @@ public class Cat {
             throw new IllegalArgumentException("значение мышей не может быть null");
         }
         if (this.getCatSpeed() > mouse.getMouseSpeed()) {
-            System.out.println("кот поймал " + mouse);
+            System.out.println("Кот " + getCatName() + " поймал " + mouse);
             for (int i = 0; i < catchMouse.length; i++) {
                 if (catchMouse[i] == null) {
                     catchMouse[i] = mouse;
@@ -69,7 +69,7 @@ public class Cat {
         for (int i = 0; i < this.catchMouse.length; i++) {
             if (catchMouse[i] == null) {
                 for (int j = 0; j < this.catchMouse.length; j++) {
-                    if (catchMouse[j] != null) {
+                    if (cat.catchMouse[j] != null) {
                         if (getCatSpeed() > cat.catchMouse[j].getMouseSpeed()) {
                             catchMouse[i] = cat.catchMouse[j];
                             if (cat.catchMouse[j] != null)
@@ -89,16 +89,16 @@ public class Cat {
     public void catFight(Cat cat) {
         if (cat == null) throw new IllegalArgumentException("Cat Null");
         if (this.getCatWeight() > cat.getCatWeight()) {
-            System.out.println(this.getCatName() + " победил");
+            System.out.println("Кот " + this.getCatName() + " победил");
             this.getMouse(cat);
         } else {
-            System.out.println(cat.getCatName() + " победил");
+            System.out.println("Кот " + cat.getCatName() + " победил");
             cat.getMouse(this);
         }
     }
 
     @Override
     public String toString() {
-        return "Кот(" + "имя = " + catName + ", скорость = " + catSpeed + ", вес = " + catWeight + ", пойманные мыши = " + Arrays.toString(catchMouse) + ")";
+        return "Кот(" + "имя = " + catName + ", скорость = " + catSpeed + ", вес = " + catWeight + ", пойманные мыши: " + Arrays.toString(catchMouse) + ")";
     }
 }
