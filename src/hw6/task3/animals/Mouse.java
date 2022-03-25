@@ -1,9 +1,13 @@
-package hw6.task2.animals;
+package hw6.task3.animals;
 
 public class Mouse {
-    private double mouseSpeed;
+    private int mouseSpeed;
 
-    public void setMouseSpeed(double mouseSpeed) {
+    public Mouse(int mouseSpeed) {
+       setMouseSpeed(mouseSpeed);
+    }
+
+    public void setMouseSpeed(int mouseSpeed) {
         if (mouseSpeed <= 0) {
             throw new IllegalArgumentException("скорость мыши дожна быть больше 0");
         }
@@ -12,5 +16,10 @@ public class Mouse {
 
     public double getMouseSpeed() {
         return mouseSpeed;
+    }
+
+    @Override
+    public String toString() {
+        return "Mouse(" + "speed = " + mouseSpeed + ")";
     }
 }
