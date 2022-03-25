@@ -5,8 +5,8 @@ import hw6.task3.animals.Mouse;
 
 public class Application1 {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Bora", 23, 27);
-        Cat cat2 = new Cat("Myrka", 27, 26);
+        Cat cat1 = new Cat("Red", 23, 27);
+        Cat cat2 = new Cat("Mars", 27, 26);
 
         cat1.catchMouse(new Mouse(35));
         cat1.catchMouse(new Mouse(25));
