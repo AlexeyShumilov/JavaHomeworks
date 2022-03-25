@@ -75,7 +75,7 @@ public class Cat {
                             if (cat.catchMouse[j] != null)
                                 cat.catchMouse[j] = null;
                         } else {
-                            System.out.println("Мышь " + cat.catchMouse[j] + " убежала");
+                            System.out.println(cat.catchMouse[j] + " сбежала от кота");
                             if (cat.catchMouse[j] != null)
                                 cat.catchMouse[j] = null;
                             continue;
@@ -89,10 +89,10 @@ public class Cat {
     public void catFight(Cat cat) {
         if (cat == null) throw new IllegalArgumentException("Cat Null");
         if (this.getCatWeight() > cat.getCatWeight()) {
-            System.out.println("Кот " + this.getCatName() + " победил");
+            System.out.println("Кот " + this.getCatName() + " победил кота " + cat.getCatName());
             this.getMouse(cat);
         } else {
-            System.out.println("Кот " + cat.getCatName() + " победил");
+            System.out.println("Кот " + cat.getCatName() + " победил кота " + getCatName());
             cat.getMouse(this);
         }
     }
