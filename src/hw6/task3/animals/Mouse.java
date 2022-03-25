@@ -1,10 +1,10 @@
 package hw6.task3.animals;
 
 public class Mouse {
-    private int mouseSpeed;
+    private double mouseSpeed;
     private int mouseNumber;
 
-    public Mouse(int mouseNumber, int mouseSpeed) {
+    public Mouse(int mouseNumber, double mouseSpeed) {
         setMouseNumber(mouseNumber);
         setMouseSpeed(mouseSpeed);
     }
@@ -20,7 +20,7 @@ public class Mouse {
         this.mouseNumber = mouseNumber;
     }
 
-    public void setMouseSpeed(int mouseSpeed) {
+    public void setMouseSpeed(double mouseSpeed) {
         if (mouseSpeed <= 0) {
             throw new IllegalArgumentException("скорость мыши дожна быть больше 0");
         }
