@@ -27,7 +27,7 @@ public class MyProduct {
 
     public void addProduct(Product product){
         for (int i = 0; i < products.length; i++){
-            if (product.getProtein()>maxProtein){
+            if (product.getProtein() > maxProtein){
                 throw new IllegalArgumentException("Белков должно быть меньше 50");
             }
             if (product.getFats()>maxFats){
@@ -39,8 +39,8 @@ public class MyProduct {
             if (product.getCalories()>maxCalories){
                 throw new IllegalArgumentException("Калорий должно быть меньше 540");
             }
-            if (products[i]==null){
-                products[i]=product;
+            if (products[i] == null){
+                products[i] = product;
                 return;
             }
         }
@@ -48,16 +48,16 @@ public class MyProduct {
     }
 
     public void addProduct(Product...products){
-        for (Product product:products){
+        for (Product product: products){
             addProduct(product);
         }
     }
 
     public void productsList(){
-        System.out.println("Рацион "+ getName()+": ");
-        for (Product product:products){
-            if (product!=null){
-                System.out.println("Продукт " + product.getTitle()+ ":" + " белков - "+product.getProtein()+", жиров - "+product.getFats()+", углеводов - "+product.getCarbohydrates()+", калорий - "+product.getCalories());}
+        System.out.println("Рацион " + getName() + ": ");
+        for (Product product: products){
+            if (product != null){
+                System.out.println("Продукт " + product.getTitle() + ":" + " белков - " + product.getProtein() + ", жиров - " + product.getFats() + ", углеводов - " + product.getCarbohydrates() + ", калорий - " + product.getCalories());}
         }
     }
 }
