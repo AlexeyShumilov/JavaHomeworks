@@ -20,6 +20,6 @@ public class Mouse {
 
     @Override
     public String toString() {
-        return "Mouse(" + "speed = " + mouseSpeed + ")";
+        return "Мышь(" + "скорость = " + mouseSpeed + ")";
     }
 }

@@ -99,6 +99,6 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "Cat(" + "name = " + catName + ", speed = " + catSpeed + ", weight = " + catWeight + ", catchMouse = " + Arrays.toString(catchMouse) + ")";
+        return "Кот(" + "имя = " + catName + ", скорость = " + catSpeed + ", вес = " + catWeight + ", пойманные мыши = " + Arrays.toString(catchMouse) + ")";
     }
 }
