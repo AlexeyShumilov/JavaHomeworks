@@ -22,7 +22,7 @@ public class Group {
         for (i = 0; i < climbers.length; i++) {
             if (climbers[i] == null) {
                 climbers[i] = climber;
-                System.out.println(climber.getNameAndAdress() + "; ");
+                System.out.println(climber.getNameAndAddress() + "; ");
                 return;
             }
         }

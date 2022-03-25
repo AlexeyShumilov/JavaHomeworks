@@ -2,7 +2,7 @@ package hw6.task1.climbing;
 
 public class Climber {
     private String name;
-    private String adress;
+    private String address;
 
     public void setName(String name) {
         if ( name == null || name.length() < 3){
@@ -11,23 +11,23 @@ public class Climber {
         this.name = name;
     }
 
-    public void setAdress(String adress) {
-        if (adress == null || adress.length() < 5) {
-            throw new IllegalArgumentException("Значение adress от 5 символов");
+    public void setAddress(String address) {
+        if (address == null || address.length() < 5) {
+            throw new IllegalArgumentException("Значение address от 5 символов");
         }
-        this.adress = adress;
+        this.address = address;
     }
 
-    public Climber(String name, String adress){
+    public Climber(String name, String address){
         setName(name);
-        setAdress(adress);
+        setAddress(address);
     }
 
-    public void printNameAndAdress(){
-        System.out.println(name + ", " + adress);
+    public void printNameAndAddress(){
+        System.out.println(name + ", " + address);
     }
 
-    public String getNameAndAdress(){
-        return name + ", " + adress;
+    public String getNameAndAddress(){
+        return name + ", " + address;
     }
 }
