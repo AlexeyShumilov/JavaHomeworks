@@ -1,21 +1,13 @@
 package hw7;
 
-import hw7.base.Lesson;
-import hw7.base.Units;
+import hw7.base.Worker;
 
-public class Student extends Lesson {
-    private int knowleges;
-    public Student( String name, int age, String lesson){
-        super(name, age, lesson);
+public class Student extends Worker {
+    public Student(String name, int age, int skill, String lesson){
+        super(name, age, lesson, skill);
     }
 
-    public void toLearn (int level){
-        knowleges += (int) (Math.random() * level);
-        System.out.println("Уровень знаний ученика состовляет" + knowleges);
+    public void learning(Teacher teacher){
+        setSkill(Math.min((int)(Math.random() * teacher.getSkill() + getSkill()), teacher.getSkill()));
     }
-
-    public int getKnowleges() {
-        return knowleges;
-    }
-
 }
