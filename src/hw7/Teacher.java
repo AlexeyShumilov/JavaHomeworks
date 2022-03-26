@@ -1,17 +1,17 @@
 package hw7;
 
-import hw7.base.Lesson;
+import hw7.base.Worker;
 
-public class Teacher extends Lesson {
-    private int level;
+public class Teacher extends Worker {
 
-    public Teacher(String name, int age, String lesson, int level){
-        super(lesson, age, name);
-        this.level = level;
+
+    public Teacher(String name, int age, int skill, String lesson){
+        super(name, age, lesson, skill);
     }
 
-    public void toTeach (Student student){
-        student.toLearn(level);
-        System.out.println("Учитель обучил" + getLesson());
+    public void teaching (Student student){
+        if (getLesson().equals(student.getLesson())){
+            student.learning(this);
+        }
     }
 }
