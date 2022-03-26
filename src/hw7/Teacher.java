@@ -5,7 +5,7 @@ import hw7.base.Worker;
 public class Teacher extends Worker {
 
 
-    public Teacher(String name, int age, int skill, String lesson){
+    public Teacher(String name, int age, String lesson, int skill){
         super(name, age, lesson, skill);
     }
 

@@ -59,7 +59,7 @@ public class School {
                 for (Student student: students){
                     if (student != null){
                         teacher.teaching(student);
-                        System.out.println("У ученика" + student.getName() + " уровень знаний стал равен" + student.getSkill() + " (учитель: " + teacher.getName() + ")");
+                        System.out.println("У ученика " + student.getName() + " уровень знаний стал равен " + student.getSkill() + " (учитель: " + teacher.getName() + ")");
                     }
                 }
             }
