@@ -1,20 +1,18 @@
 package hw7;
 
-import hw7.base.Units;
+import hw7.base.Human;
 
-public class Director extends Units {
+public class Director extends Human {
 
     public Director(String name, int age){
         super(name, age);
-        this.name = name;
     }
 
 
-    public void start(){
-        System.out.println("Занятия начались");
+    public void startLessons(){System.out.println(getName() + " объявил начало уроков");
     }
 
-    public void finish(){
-        System.out.println("Занятия закончились");
+    public void finishLessons(){
+        System.out.println(getName() + " объявил конец уроков");
     }
 }
