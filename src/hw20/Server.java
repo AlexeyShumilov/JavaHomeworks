@@ -39,6 +39,8 @@ public class Server {
                     connection.sendMessage(SimpleMessage.getMessage("server", String.valueOf(connectionCount)));
                 } else if (temp.getText().equalsIgnoreCase("/ping")) {
                     connection.sendMessage(SimpleMessage.getMessage("server", "ping: " + (System.currentTimeMillis() - a) + " ms"));
+                } else if (temp.getText().equalsIgnoreCase("/exit")) {
+                    connectionCount--;
                 } else {
                     connection.sendMessage(SimpleMessage.getMessage("server", "сообщение получено"));
                 }

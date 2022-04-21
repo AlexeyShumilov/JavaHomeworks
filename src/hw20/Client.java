@@ -19,14 +19,17 @@ public class Client {
     public void start() throws Exception {
         System.out.println("Введите имя");
         String name = scanner.nextLine();
-        String messageText;
+        String messageText = null;
 
-        while (true){
+        while (!"/exit".equals(messageText)){
             System.out.println("Введите сообщение");
             messageText = scanner.nextLine();
             sendAndPrintMessage(SimpleMessage.getMessage(name, messageText));
+
+            }
         }
-    }
+
+
 
     private void sendAndPrintMessage(SimpleMessage message) throws Exception {
         try (Connection connection = new Connection(getSocket())){ // getSocket Только для того, чтобы посмотреть методы сокета
